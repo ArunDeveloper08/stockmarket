@@ -1,4 +1,4 @@
-
+"use client"
 // import { getData } from "@/actions/data";
 
 import React, { Fragment, useEffect, useState } from "react";
@@ -47,7 +47,7 @@ const Table = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/option-chain-indices?symbol=NIFTY`);
+        const response = await fetch(`https://www.nseindia.com/api/option-chain-indices?symbol=NIFTY`);
 
         if (!response.ok) {
           throw new Error('Failed to fetch data');
