@@ -1,6 +1,8 @@
 "use client";
 import { getData } from "@/actions/data";
+
 import React, { Fragment, useEffect, useState } from "react";
+
 const Table = () => {
   const [data, setData] = useState({
     error: "",
