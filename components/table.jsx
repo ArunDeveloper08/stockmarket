@@ -27,10 +27,11 @@ const Table = () => {
   if (data.error) {
     return <p>Some Error Occured...</p>;
   }
-  if (!("filtered" in data.data)) {
-    return <p>Page Loading...</p>;
-  }
-  console.log(data.data.filtered.data);
+  console.log(data.data)
+  // if (!("filtered" in data.data)) {
+  //   return <p>Page Loading...</p>;
+  // }
+  // console.log(data.data.filtered.data);
   return (
     <div>
       <table className="w-1/2 m-6">
@@ -40,7 +41,7 @@ const Table = () => {
             <th>CE / PE</th>
             <th>Ask price</th>
           </tr>
-          {data.data.filtered.data.map((item) => (
+          {data?.data?.filtered?.data?.map((item) => (
             <Fragment key={item.strikePrice}>
               <tr>
                 <td>{item.CE.strikePrice}</td>
