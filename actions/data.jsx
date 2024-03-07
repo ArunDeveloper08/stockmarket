@@ -1,4 +1,4 @@
-
+'use server'
 export async function getData() {
   const res = await fetch(
     "https://www.nseindia.com/api/option-chain-indices?symbol=NIFTY"

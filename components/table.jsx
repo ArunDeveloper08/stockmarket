@@ -27,7 +27,7 @@ const Table = () => {
     return <p>Loading...</p>;
   }
   if (data.error) {
-    return <p>Some Error Occured...</p>;
+    return <p>{JSON.stringify(data.error)}</p>;
   }
   console.log(data.data)
   // if (!("filtered" in data.data)) {
