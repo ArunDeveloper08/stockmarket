@@ -1,11 +1,10 @@
 import Table from "@/components/table";
 
 export default async function Home() {
-const response =await  fetch('https://www.nseindia.com/api/option-chain-indices?symbol=NIFTY')
-const res = await response.json();
+
   return (
     <>
-     <Table data={res}/>
+     <Table/>
     </>
   );
 }
