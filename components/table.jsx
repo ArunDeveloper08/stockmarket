@@ -30,16 +30,12 @@ const Table = () => {
     return <p>{JSON.stringify(data.error)}</p>;
   }
   console.log(data.data)
-  // if (!("filtered" in data.data)) {
-  //   return <p>Page Loading...</p>;
-  // }
-  // console.log(data.data.filtered.data);
   return (
     <div>
       <table className="w-1/2 m-6">
         <tbody>
           <tr>
-            <th>Strike Price</th>
+            <th>Strike  t Price</th>
             <th>CE / PE</th>
             <th>Ask price</th>
           </tr>

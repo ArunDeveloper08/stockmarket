@@ -1,7 +1,6 @@
 import Table from "@/components/table";
 
 export default async function Home() {
-
   return (
     <>
      <Table/>
